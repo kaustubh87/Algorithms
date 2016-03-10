@@ -7,6 +7,15 @@ public class BinarySearchTree {
 
     public void insert(Integer data){
 
+        if(root ==null)
+        {
+            this.root = new TreeNode(data);
+        }
+        else
+        {
+            root.insert(data);
+        }
+
     }
 
     public TreeNode find(Integer data){
